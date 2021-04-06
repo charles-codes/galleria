@@ -25,16 +25,20 @@
   </header>
 
   <div class="search-container">
-    <input name="art-search" type="text" class="search-input">
-    <button id="art-search" class="add-art" onclick="searchArt()">Search the Rijksmusuem Collection</button>
-
-    <input name="HaM-search" type="text" class="search-input-HaM">
-    <button id="HaM-search" class="add-art" onclick="searchHaM()">Search the Harvard Art Museum Collection</button>
-
+    <div class="search-subcontainer">
+      <input name="art-search" type="text" class="search-input">
+      <button id="art-search" class="add-art" onclick="searchArt()">Search the Rijksmusuem Collection</button>
+    </div>
     
-    <button id="MET-search" class="add-art" onclick="searchMET()">Get Random Art Object from the MET Collection</button>
+    <div class="search-subcontainer">
+      <input name="HaM-search" type="text" class="search-input-HaM">
+      <button id="HaM-search" class="add-art" onclick="searchHaM()">Search the Harvard Art Museum Collection</button>
+    </div>
+
+    <div class="search-subcontainer">
+      <button id="MET-search" class="add-art" onclick="searchMET()">Get Random Art Object from the MET Collection</button>
+    </div>
   </div>
-  
   
   <div class="art-div"></div>
 </body>

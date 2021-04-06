@@ -2,6 +2,22 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  min-width: 100%;
+
+  font-family: Andale Mono, monospace;
+}
+
+button {
+  font-family: Andale Mono, monospace;
+  font-size: 12px;
+}
+
 .art-div {
   display: flex;
   justify-content: space-between;
