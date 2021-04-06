@@ -1,8 +1,8 @@
 // JS logic for searching the Rijksmuseum Collection
 
 // returns matching art objects from keyword search
-function searchArt() {
-  const query = $(".search-input").val().trim();
+function searchArtRijks() {
+  const query = $(".search-input-rijks").val().trim();
 
   fetch("https://www.rijksmuseum.nl/api/nl/collection?key=I0BcbCZL&imgonly=True&ps=100&q=" + query)
     .then((response) => {
