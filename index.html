@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GALLERIA</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="./met_array.js"></script>
+  <script src="./rijksmuseum_fetch.js"></script>
+  <script src="./harvardartmuseum_fetch.js"></script>
+  <script src="./met_fetch.js"></script>
+
+</head>
+<body>
+  <header class="header">
+    <h1>GALLERIA</h1>
+  </header>
+
+  <div class="search-container">
+    <input name="art-search" type="text" class="search-input">
+    <button id="art-search" class="add-art" onclick="searchArt()">Search the Rijksmusuem Collection</button>
+
+    <input name="HaM-search" type="text" class="search-input-HaM">
+    <button id="HaM-search" class="add-art" onclick="searchHaM()">Search the Harvard Art Museum Collection</button>
+
+    
+    <button id="MET-search" class="add-art" onclick="searchMET()">Get Random Art Object from the MET Collection</button>
+  </div>
+  
+  
+  <div class="art-div"></div>
+</body>
+</html>
