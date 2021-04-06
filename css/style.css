@@ -13,6 +13,23 @@ body {
   font-family: Andale Mono, monospace;
 }
 
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.search-subcontainer {
+  width: 200px;
+  height: 200px;
+}
+
+.search-museum-image {
+  width: 190px;
+  height: 190px;
+}
+
 button {
   font-family: Andale Mono, monospace;
   font-size: 12px;
@@ -28,3 +45,4 @@ button {
 .flex-item {
   width: 33%;
 }
+
