@@ -10,12 +10,19 @@ function searchEuropeana() {
     })
     .then((data) => {
       console.log(data);
-      // displayArtEuropeana(data);
+      displayArtEuropeana(data);
     });
 }
 
 // formats searchArt() results via DOM manipulation
-function displayEuropeana(data) {
+function displayArtEuropeana(data) {
+  for (let i = 0; i < data.items.length; i++) {
+    const art = document.querySelector(".art-div");
+    const artImage = document.createElement("img");
+    artImage.classList.add("flex-item");
+    artImage.src = data.items[i].edmIsShownBy[0];
+    art.appendChild(artImage);
+  }
   // for (let i = 0; i < data.artObjects.length; i++) {
   //   const art = document.querySelector(".art-div");
   //   const artImage = document.createElement("img");
