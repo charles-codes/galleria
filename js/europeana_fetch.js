@@ -18,10 +18,17 @@ function searchEuropeana() {
 function displayArtEuropeana(data) {
   for (let i = 0; i < data.items.length; i++) {
     const art = document.querySelector(".art-div");
+
+    const artLink = document.createElement("a");
     const artImage = document.createElement("img");
-    artImage.classList.add("flex-item");
+
+    artLink.appendChild(artImage);
+    artLink.href = data.items[i].guid;
+    artLink.setAttribute("target", "_blank");
+    artLink.classList.add("flex-item");
+    
     artImage.src = data.items[i].edmIsShownBy[0];
     artImage.alt = data.items[i].title;
-    art.appendChild(artImage);
+    art.appendChild(artLink);
   }
 }

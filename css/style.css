@@ -83,8 +83,12 @@ button {
 }
 
 .flex-item {
-  width: 33%;
-  /* margin: 0.33333%; */
+  width: 24%;
+  margin: 0.25%;
+}
+
+.flex-item > img {
+  width: 100%;
   box-shadow: 1px 1px 1px rgb(22, 21, 21);
   border-radius: 15px;
 }
