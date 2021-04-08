@@ -17,12 +17,12 @@
   <script src="./js/rijksmuseum_fetch.js"></script>
   <script src="./js/harvardartmuseum_fetch.js"></script>
   <script src="./js/met_fetch.js"></script>
+  <script src="./js/europeana_fetch.js"></script>
 
 </head>
 <body>
   <header class="header">
-    <h1>GALLERIA |||<span>||| Explore Art Objects from Renowned Collections Around the World</span></h1>
-    <!-- <h2>Explore Art Objects from Renowned Collections Around the World</h2> -->
+    <h1>GALLERIA |||<span>||| Explore Art Objects from the World's Most Renowned Collections</span></h1>
   </header>
 
   <div class="search-container">
@@ -38,6 +38,13 @@
       <p class="museum-title">Harvard Art Museum</p>
       <input name="HaM-search" type="text" class="search-input-HaM input">
       <button id="HaM-search" class="add-art" onclick="searchHaM()">Search</button>
+    </div>
+
+    <div class="search-subcontainer">
+      <img src="#" alt="" class="search-museum-image">
+      <p class="museum-title">Europeana</p>
+      <input name="Europeana-search" type="text" class="search-input-europeana input">
+      <button id="Europeana-search" class="add-art" onclick="searchEuropeana()">Search</button>
     </div>
 
     <div class="search-subcontainer">
