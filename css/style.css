@@ -85,5 +85,7 @@ button {
 .flex-item {
   width: 33%;
   /* margin: 0.33333%; */
+  box-shadow: 1px 1px 1px rgb(22, 21, 21);
+  border-radius: 15px;
 }
 
