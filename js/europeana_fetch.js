@@ -21,14 +21,7 @@ function displayArtEuropeana(data) {
     const artImage = document.createElement("img");
     artImage.classList.add("flex-item");
     artImage.src = data.items[i].edmIsShownBy[0];
+    artImage.alt = data.items[i].title;
     art.appendChild(artImage);
   }
-  // for (let i = 0; i < data.artObjects.length; i++) {
-  //   const art = document.querySelector(".art-div");
-  //   const artImage = document.createElement("img");
-  //   artImage.classList.add("flex-item");
-  //   artImage.src = data.artObjects[i].webImage.url;
-  //   artImage.alt = data.artObjects[i].longTitle;
-  //   art.appendChild(artImage);
-  // }
 }
