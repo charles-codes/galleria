@@ -18,10 +18,17 @@ function searchArtRijks() {
 function displayArtRijks(data) {
   for (let i = 0; i < data.artObjects.length; i++) {
     const art = document.querySelector(".art-div");
+
+    const artLink = document.createElement("a");
     const artImage = document.createElement("img");
-    artImage.classList.add("flex-item");
+
+    artLink.appendChild(artImage);
+    artLink.href = data.artObjects[i].links.web;
+    artLink.setAttribute("target", "_blank");
+    artLink.classList.add("flex-item");
+
     artImage.src = data.artObjects[i].webImage.url;
     artImage.alt = data.artObjects[i].longTitle;
-    art.appendChild(artImage);
+    art.appendChild(artLink);
   }
 }
