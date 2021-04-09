@@ -74,6 +74,14 @@ button {
   width: 190px;
 }
 
+.clear {
+  width: 190px;
+  height: 190px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 1px 1px rgb(22, 21, 21);
+  font-size: 28px;
+}
+
 .art-div {
   display: flex;
   justify-content: space-between;
