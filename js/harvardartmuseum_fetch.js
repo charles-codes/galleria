@@ -18,9 +18,10 @@ function searchHaM() {
 function displayArtHarvard(data) {
   for(let i = 0; i < data.records.length; i++) {
     const art = document.querySelector(".art-div");
+
     const artImage = document.createElement("img");
-    artImage.classList.add("flex-item");
-    // artImage.src = data.records[i].primaryimageurl;
+
+    artImage.classList.add("flex-item, flex-item-image");
     artImage.src = data.records[i].baseimageurl;
     artImage.alt = data.records[i].alttext;
     art.appendChild(artImage);

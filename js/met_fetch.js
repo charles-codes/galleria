@@ -16,14 +16,19 @@ function searchMET() {
 // formats searchMET() results via DOM manipulation
 function displayArtMet(data) {
   const art = document.querySelector(".art-div");
+
+  const artLink = document.createElement("a");
   const artImage = document.createElement("img");
-  artImage.classList.add("flex-item");
 
   if (data.primaryImage === "") {
     artImage.style.display = "none";
   } else {
     artImage.src = data.primaryImage;
     artImage.alt = data.objectName;
-    art.appendChild(artImage);
+    artLink.appendChild(artImage);
+    artLink.href= data.objectURL;
+    artLink.setAttribute("target", "_blank");
+    artLink.classList.add("flex-item");
+    art.appendChild(artLink);
   };
 }

@@ -93,3 +93,8 @@ button {
   border-radius: 15px;
 }
 
+.flex-item-image {
+  box-shadow: 1px 1px 1px rgb(22, 21, 21);
+  border-radius: 15px;
+}
+
