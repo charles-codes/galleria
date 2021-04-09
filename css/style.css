@@ -12,12 +12,13 @@ body {
   min-width: 100%;
 
   font-family: Andale Mono, monospace;
-  background-color: rgb(243, 235, 235);
+  /* background-color: rgb(243, 235, 235); */
+  background: linear-gradient(rgb(243, 235, 235), rgb(161, 131, 131));
 }
 
 h1 {
   text-align: left;
-  text-shadow: 2px 2px white;
+  text-shadow: 0.5px 0.5px white;
 }
 
 span {
