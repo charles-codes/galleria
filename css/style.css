@@ -83,6 +83,10 @@ button {
   font-size: 28px;
 }
 
+.clear:hover {
+  opacity: 60%;
+}
+
 .art-div {
   display: flex;
   justify-content: space-between;
