@@ -30,7 +30,5 @@ function displayArtRijks(data) {
     artImage.src = data.artObjects[i].webImage.url;
     artImage.alt = data.artObjects[i].longTitle;
     art.appendChild(artLink);
-
-    $(".search-input-rijks").empty();
   }
 }

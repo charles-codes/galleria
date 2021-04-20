@@ -2,7 +2,7 @@
 
 function clearContainer() {
   $(".art-div").empty();
-  $(".search-input-HaM").empty();
-  $(".search-input-rijks").empty();
-  $(".search-input-europeana").empty();
+  $(".search-input-HaM").val("");
+  $(".search-input-rijks").val("");
+  $(".search-input-europeana").val("");
 };
