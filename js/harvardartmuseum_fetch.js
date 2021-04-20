@@ -21,7 +21,8 @@ function displayArtHarvard(data) {
 
     const artImage = document.createElement("img");
 
-    artImage.classList.add("flex-item, flex-item-image");
+    artImage.classList.add("flex-item");
+    art.classList.add("flex-item-image");
     artImage.src = data.records[i].baseimageurl;
     artImage.alt = data.records[i].alttext;
     art.appendChild(artImage);
