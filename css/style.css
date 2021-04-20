@@ -12,7 +12,6 @@ body {
   min-width: 100%;
 
   font-family: Andale Mono, monospace;
-  /* background-color: rgb(243, 235, 235); */
   background: linear-gradient(rgb(243, 235, 235), rgb(161, 131, 131));
 }
 
@@ -25,7 +24,7 @@ span {
   float: right;
   text-align: right;
   font-size: 16px;
-  padding-right: 6px;
+  padding-right: 16px;
 }
 
 .search-container {
